@@ -116,12 +116,15 @@ class OnlineBank{
             break;
           case 'C':
             System.out.println("How much would you link to withdraw?");
+            int taking = scanner.nextInt();
+            withdrew(taking);
+            previousTransAction = taking;
             showMenu();
             break;
           
           case 'D':
             System.out.println("Here is your previous transaction : " + previousTransAction);
-            if(previousTransaction
+           
             showMenu();
             break;
           case 'E':
